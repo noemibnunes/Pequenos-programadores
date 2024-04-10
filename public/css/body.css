@@ -2,12 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-top: -100px;
 }
 
 .imagem-principal {
     margin-right: 130px;
-    margin-top: -840px; 
     float: right;
     position: relative;
     background-color: transparent;

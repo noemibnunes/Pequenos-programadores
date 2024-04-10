@@ -1,0 +1,24 @@
+.imagem {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 41px 140px;
+}
+
+.bannerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagemInicio {
+    z-index: 1;
+    background-color: transparent;
+}
