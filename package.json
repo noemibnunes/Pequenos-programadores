@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "framer-motion": "^11.0.25",
+    "primereact": "^10.6.3",
     "pyodide": "^0.25.1",
     "python-shell": "^5.0.0",
     "react": "^18.2.0",

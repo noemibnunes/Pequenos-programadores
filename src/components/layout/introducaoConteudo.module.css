@@ -1,0 +1,9 @@
+.introducao {
+    margin: 0 140px;
+
+    .titulo {
+        text-align: center;
+        color: var(--cor-titulo);
+        margin: 48px 0;
+    }
+}
