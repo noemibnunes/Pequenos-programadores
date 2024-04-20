@@ -1,6 +1,34 @@
-.tituloConteudo {
-    color: #525FE1;
-    margin: 24px 0;
+.conteudo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+
+    .tituloConteudo {
+        color: #525FE1;
+        margin: 24px 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
 }
 
 

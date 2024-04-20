@@ -1,15 +1,8 @@
-.imagem {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-}
-
 .conteudo {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    margin: 41px 140px;
+    margin: 31px;
 }
 
 .conteudoText {
@@ -26,7 +19,7 @@
 .cards{
     display: flex;
     justify-content: center;
-    margin: 0 140px 64px;
+    margin: 20px;
     gap: 20px;
 
     .card {
@@ -37,21 +30,60 @@
 .stepper {
     flex-basis: 50rem;
     font-family: "Azo Sans";
-    margin: 0 140px;
     padding: 40px 0;
+    margin: 0 20px;
 
     ul {
         padding: 0;
     }
 
-    button {
+    [class~="p-stepper-action"] {
         background-color: transparent;
+    }
+    
+    [class~="p-stepper-panels"] {
+        background: transparent;
+        border: 3px solid #e5e7eb;
+        border-radius: 16px;
+
+        button {
+            background: #ff9408 !important;
+            border: solid #ff9408;
+            border-radius: 16px;            
+        }
     }
 }
 
-.panel {
-    
+.btnRight, .btnBetween {
+    display: flex;
 }
+
+.btnRight {
+    justify-content: end;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.btnBetween {
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.subConteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}   
+
+.divCuriosidades {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+
+/** RESPONSIVIDADE **/
 
 @media (max-width: 1280px) {
     .imagemInicio {
@@ -85,6 +117,18 @@
 
         .card {
             width: 100%;
+        }
+    }
+
+    [class~='p-button-label'] {
+        display: none !important;
+    }
+  
+    .dicas {
+        margin: 0 20px;
+
+        h3 {
+            font-size: 20px;
         }
     }
 }

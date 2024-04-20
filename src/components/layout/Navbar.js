@@ -3,7 +3,7 @@ import logo from '../../img/pequenos-programadores.svg';
 import logoBranca from '../../img/Pequenos-Programadores-branco.svg';
 import lupa from '../../img/lupa.png';
 
-function Navbar() {
+export default function Navbar() {
     return (
         <nav className={styles.nav}>
             <div className={styles.logo}>
@@ -20,5 +20,3 @@ function Navbar() {
         </nav>
     );
 }
-
-export default Navbar;

@@ -1,0 +1,23 @@
+.curiosidades {
+    img {
+        float: left;
+        width: 400px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #FF9408;
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    h4, p {
+        color: #fff;
+    }
+
+}
+
+[class~='p-carousel-content'] {
+    background-image: url('../../img/curiosidade_background.svg');
+    padding: 20px;
+}

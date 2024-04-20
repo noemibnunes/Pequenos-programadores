@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     height: 115px;
-    padding: 31px 140px;
+    padding: 31px;
     background-color: transparent;
 }
 
@@ -89,7 +89,6 @@
         .logoBranco {
             display: block;
         }
-
     }   
 }
 

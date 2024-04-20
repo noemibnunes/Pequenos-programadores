@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
   --cor-titulo: #003350;
-  margin: 0;
+  margin: 0 140px;
   padding: 0;
   background-color: #FFF8F4;
 }
@@ -89,6 +89,7 @@ p {
   body {
     background-image: none;
     background-color: #FFF8F4;
+    margin: 0;     
   }
 }
 
