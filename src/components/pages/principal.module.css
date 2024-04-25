@@ -38,7 +38,7 @@
     }
 
     [class~="p-stepper-action"] {
-        background-color: transparent;
+        background-color: transparent !important;
     }
     
     [class~="p-stepper-panels"] {
@@ -82,8 +82,73 @@
     width: auto;
 }
 
+[class~='card'] {
+    margin: 20px 40px;
+}
+
+[class~='p-accordion-tab'] {
+    background-color: #FFF8F4;
+    border: 2px solid #fff;
+
+    [class~='p-accordion-header-link'] {
+        color: #FF484A;
+    }
+
+    h5 {
+        padding: 20px;
+    }
+
+    p {
+        padding: 0 20px;
+    }
+
+    img {
+        width: 25%;
+        padding: 20px;
+    }
+}
+
+.imgScratch {
+    width: 70% !important;
+}
+
+.imgVariavel {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 70%;
+
+    .scratch {
+        width: 30% !important;
+    }
+
+    .resultadoVariavelScratch {
+        width: 70% !important;
+    }
+}
+
+iframe {
+    display: flex;
+    margin: 0 auto;
+}
 
 /** RESPONSIVIDADE **/
+
+@media (min-width: 1780px) {
+    [class~='p-accordion-tab'] {
+        [class~='p-accordion-header-link'] {
+            font-size: 24px;
+        }
+
+        h5 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 25px;
+        }
+    }
+}
 
 @media (max-width: 1280px) {
     .imagemInicio {
@@ -130,6 +195,15 @@
         h3 {
             font-size: 20px;
         }
+    }
+
+    .subConteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 380px;
     }
 }
 

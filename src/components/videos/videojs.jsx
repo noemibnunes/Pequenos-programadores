@@ -7,8 +7,8 @@ class VideoJSPlayerComponent extends Component {
     player;
     videoNode;
     videoJsOptions = {
-        autoplay: true,
-        muted: true,
+        autoplay: false,
+        muted: false,
         height: 450,
         width: 800,
         controls: true,
@@ -125,7 +125,7 @@ class VideoJSPlayerComponent extends Component {
         return (
             <div className="customVideoPlayer">
                 <div className="playerWrapper" data-vjs-player>
-                    <video id='video' ref={node => (this.videoNode = node)} className="video-js"/>
+                    <video id='video' ref={node => (this.videoNode = node)} className="video-js" style={{backgroundColor:this.props.cor_background}}/>
                 </div>
                 <hr/>
             </div>

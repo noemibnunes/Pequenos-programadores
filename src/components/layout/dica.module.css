@@ -10,6 +10,14 @@
     }
 }
 
+@media (min-width: 1780px) {
+    .dicas {
+        h3 {
+            font-size: 45px;
+        }
+    }
+}
+
 @media (max-width: 690px) {
     .dicas {
         margin: 0 20px;

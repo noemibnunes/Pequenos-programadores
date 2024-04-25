@@ -18,6 +18,18 @@
     }
 }
 
+@media (min-width: 1780px) {
+    .introducao {
+        .titulo {
+            font-size: 70px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+    }
+}
+
 @media (max-width: 690px) {
     .introducao {
         margin: 0 20px;

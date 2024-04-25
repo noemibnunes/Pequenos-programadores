@@ -25,7 +25,7 @@
     "react-ace": "^11.0.1",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
-    "react-router-dom": "^6.22.3",
+    "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
     "react-video-js-player": "^1.1.1",
     "uuid": "^9.0.1",

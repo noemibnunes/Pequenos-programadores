@@ -8,6 +8,10 @@
   src: local("Azo Sans"), url(../src/components/fonts/AzoSans-Regular.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url('./img/detalhe-body.svg');
   background-repeat: no-repeat;
