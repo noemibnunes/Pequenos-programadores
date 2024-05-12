@@ -125,7 +125,7 @@ class VideoJSPlayerComponent extends Component {
         return (
             <div className="customVideoPlayer">
                 <div className="playerWrapper" data-vjs-player>
-                    <video id='video' ref={node => (this.videoNode = node)} className="video-js" style={{backgroundColor:this.props.cor_background}}/>
+                    <video id='video' ref={node => (this.videoNode = node)} className="video-js" style={{backgroundColor:this.props.cor_background}} alt={this.props.alt} title={this.props.title}/>
                 </div>
                 <hr/>
             </div>

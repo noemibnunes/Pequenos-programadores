@@ -11,7 +11,7 @@
         margin: 48px 0;
     }
 
-    h3 {
+    h2 {
         font-family: "Azo Sans";
         font-size: 18px;
         text-align: center;
@@ -24,7 +24,7 @@
             font-size: 70px;
         }
 
-        h3 {
+        h2 {
             font-size: 26px;
         }
     }
@@ -38,7 +38,7 @@
             margin: 24px 0;
         }
 
-        h3 {
+        h2 {
             font-size: 13px;
         }
     }

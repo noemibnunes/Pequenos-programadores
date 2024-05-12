@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
 
-    h3 {
+    h2 {
         text-align: center;
         font-size: 30px;
     }
@@ -12,7 +12,7 @@
 
 @media (min-width: 1780px) {
     .dicas {
-        h3 {
+        h2 {
             font-size: 45px;
         }
     }
@@ -22,7 +22,7 @@
     .dicas {
         margin: 0 20px;
 
-        h3 {
+        h2 {
             font-size: 20px;
         }
     }

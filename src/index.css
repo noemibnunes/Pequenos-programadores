@@ -19,7 +19,7 @@ body {
   --cor-titulo: #003350;
   margin: 0 140px;
   padding: 0;
-  background-color: #FFF8F4;
+  background-color: #FFF8F4 !important;
 }
 
 h1, h2, h3 {

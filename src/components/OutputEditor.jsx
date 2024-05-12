@@ -1,6 +1,7 @@
 import { Box, Button, Text, useToast } from '@chakra-ui/react';
 import { executeCode } from '../api';
 import { useState } from 'react';
+import styles from './editor.module.css';
 
 const OutputEditor = ({editorRef, language}) => {
     const toast = useToast();
@@ -30,11 +31,9 @@ const OutputEditor = ({editorRef, language}) => {
 
     return (
         <Box w='50%'>
-            <Text mb={2} fontSize='lg' color="#fff">Saída</Text>
-            <Button
+            <Button className={styles.MenuButton}
                 variant='outline'
                 colorScheme='green'
-                mb={4}
                 isLoading={isLoading}
                 onClick={runCode}
             >
@@ -49,8 +48,8 @@ const OutputEditor = ({editorRef, language}) => {
                borderColor={isError ? "red.500" : "#333"}
             >
                { output ? 
-                    output.map((line, i) => <Text key={i} color="#fff"> {line} </Text>) 
-                    : <Text color="#fff"> Clique em "Executar" para visualizar a saída aqui </Text> }
+                    output.map((line, i) => <Text key={i} color="#000"> {line} </Text>) 
+                    : <Text color="#000"> Clique em "Executar" para ver o que acontece! </Text> }
             </Box>
         </Box>
     );   

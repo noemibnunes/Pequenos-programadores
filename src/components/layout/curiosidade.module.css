@@ -1,11 +1,11 @@
 [class~='p-carousel-content'] {
-    background-image: url('../../img/curiosidade_background.svg');
-    background-position: center;
+    /* background: #1D1534; */
+    background-image: url("../../img/carousel1.svg");
     padding: 0 140px;
-    background-repeat: no-repeat;
     display: flex;
     justify-items: center;
-    padding-top: 260px;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 [class~='p-link'] {
@@ -19,17 +19,19 @@
 .curiosidadesContainer {
     display: flex;
     flex-direction: column;
-
+    margin-top: 150px;
+    
     h1 {
         text-align: center;
         color: #FF9408;
         padding-bottom: 50px;
     }
 
-    h4 {
+    h2 {
         color: #fff;
         font-weight: bold;
         font-size: 30px;
+        font-family: "Azo Sans";
     }
     
     p {
@@ -59,14 +61,8 @@
     }
 }
 
-
-@media (min-width: 2500px) {
-    [class~='p-carousel-content'] {
-        background-image: url('../../img/curiosidade_background3.svg');
-        padding-top: 400px;
-    } 
-    
-
+  
+@media (min-width: 2500px) {    
     [class~='p-link'] svg{
         width: 40px;
         height: 40px;
@@ -77,7 +73,7 @@
             font-size: 70px;
         }
 
-        h4 {
+        h2 {
             font-size: 40px;
         } 
         
@@ -94,11 +90,6 @@
 }
 
 @media (min-width: 1770px) and (max-width: 2499px) {
-    [class~='p-carousel-content'] {
-        background-image: url('../../img/curiosidade_background2.svg');
-        padding-top: 300px;
-    } 
-
     [class~='p-link'] svg{
         width: 30px;
         height: 30px;
@@ -109,7 +100,7 @@
             font-size: 60px;
         }
 
-        h4 {
+        h2 {
             font-size: 35px;
         } 
         
@@ -127,7 +118,7 @@
 
 @media (max-width: 1480px) {
     .curiosidadesContainer {
-        h4 {
+        h2 {
             font-size: 30px;
         }
         
@@ -145,6 +136,7 @@
 
 @media (max-width: 1180px) {
     .curiosidadesContainer {
+        margin-top: 250px;
 
         .curiosidades {
             flex-direction: column;
@@ -153,7 +145,7 @@
             width: 100%;
         }
 
-        h4 {
+        h2 {
             font-size: 25px;
         } 
         
@@ -179,7 +171,7 @@
     }
 
     .curiosidadesContainer {
-        h4 {
+        h2 {
             font-size: 20px;
         } 
         

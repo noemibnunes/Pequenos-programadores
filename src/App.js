@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Principal from './components/pages/Principal';
-import Desafios from './components/layout/Desafios';
+import Desafios from './components/pages/Desafios';
 
 const App = () => {
   return (

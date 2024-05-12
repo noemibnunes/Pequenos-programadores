@@ -5,7 +5,7 @@ export default function subConteudo(props) {
         <div className={styles.subConteudo}>
             <h2 className={styles.titulo}> {props.titulo} </h2>
             <p> {props.texto} </p>
-            <img src={props.img} alt="imagem-conteudo"/>
+            <img src={props.img} alt={props.alt}/>
         </div>
     );
 }

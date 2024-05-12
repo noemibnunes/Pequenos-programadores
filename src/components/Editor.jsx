@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Box, Button, HStack, Menu, MenuButton, Text } from "@chakra-ui/react";
 import { Editor } from '@monaco-editor/react'; 
 import OutputEditor from './OutputEditor';
+import styles from './editor.module.css';
 
 const CodeEditor = () => {
   const editorRef = useRef()
@@ -16,9 +17,8 @@ const CodeEditor = () => {
     <Box>
       <HStack spacing={4}>
         <Box w='50%'>
-          <Text mb={2} fontSize='lg' color="#fff">Linguagem: </Text>
           <Menu isLazy>
-            <MenuButton as={Button}>
+            <MenuButton as={Button} className={styles.MenuButton}>
               Python
             </MenuButton>
           </Menu>

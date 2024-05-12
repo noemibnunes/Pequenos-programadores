@@ -7,8 +7,8 @@ export default function Navbar() {
     return (
         <nav className={styles.nav}>
             <div className={styles.logo}>
-                <img className={styles.logoColorida} src={logo} alt="logo" />
-                <img className={styles.logoBranco} src={logoBranca} alt='logo-branco' />
+                <img className={styles.logoColorida} src={logo} alt="logo-pequenos-programadores" />
+                <img className={styles.logoBranco} src={logoBranca} alt='logo-pequenos-programadores-cor-branco' />
             </div>
             
             <div className={styles.searchContainer}>

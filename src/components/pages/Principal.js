@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
 import styles from "./principal.module.css";
@@ -39,6 +39,30 @@ import Curiosidade from "../layout/Curiosidades";
 
 function Principal() {
   const stepperRef = useRef(null);
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   return (
     <div>
@@ -49,15 +73,15 @@ function Principal() {
           <h1 style={{ color: "#525FE1" }}>
             Desvende os Mistérios da Programação:
           </h1>
-          <h1 style={{ color: "#FFA41B" }}>
+          <h1 style={{ color: "#017683" }}>
             Explore um mundo de possibilidades.
           </h1>
-          <h3 style={{ color: "#6C6C72" }}>
+          <h2 style={{ color: "#6C6C72" }}>
             Aprenda de forma lúdica e interativa os fundamentos da lógica de
             programação, desde conceitos básicos até a prática através de
             desafios. Desenvolva habilidades essenciais que vão além do código,
             como resolução de problemas, pensamento crítico e criatividade.
-          </h3>
+          </h2>
         </div>
         <img
           className={styles.imagemInicio}
@@ -73,6 +97,7 @@ function Principal() {
                     titulo="Conteúdos"
                     img={imagemConteudo}
                     texto="Explore os principais conceitos da programação."
+                    alt="conteudo"
                 />
             </a>
         </div>
@@ -82,6 +107,7 @@ function Principal() {
                     titulo="Curiosidades"
                     img={imagemCuriosidade}
                     texto=" Descubra fatos e curiosidades sobre o mundo da tecnologia."
+                    alt="curiosidade"
                 />
             </a>
         </div>
@@ -91,6 +117,7 @@ function Principal() {
               titulo="Desafios"
               img={imagemDesafio}
               texto="Coloque em prática seus conhecimentos e fortaleça suas habilidades."
+              alt="desafios"
             />
           </Link>
         </div>
@@ -170,9 +197,9 @@ function Principal() {
         </div>
 
         <Dica
-          dica='Nesse momento, você pode se questionar: "E como eu irei dar instruções ao computador, se ele não me entende?",
+          dica='Nesse momento, você pode se questionar: "E como eu irei dar instruções ao computador, se ele não me entende?".
                 Bem, para se comunicar com o computador, precisamos utilizar o que chamamos de Linguagens de Programação.'
-          cor="#01B7CD"
+          cor="#017683"
         />
 
         <div>
@@ -187,14 +214,14 @@ function Principal() {
               titulo="Scratch"
               texto="O Scratch é uma linguagem de programação visual, e também uma comunidade online onde se podem criar e partilhar histórias, jogos e animações interativas.
                                 Nessa linguagem, utilizando blocos para construir códigos, podemos assimilar a quando usamos peças de lego para construir algo. O bloco diga é usado para que o ator escolhido fale algo."
-              img={scratchInicio}
+              img={scratchInicio} alt="linguagem-scratch"
             />
 
             <SubConteudo
               titulo="Python"
               texto='O Python é uma linguagem de programação muito usada, eficiente e fácil de aprender e pode ser executada em muitas plataformas diferentes.
                                 Nessa linguagem escrevemos linhas de código, que serão entendidas e executadas pelo computador. A função print() aqui no Python corresponde ao "diga" no Scratch, ou seja, é utilizado para exibir algo na tela. '
-              img={pythonInicio}
+              img={pythonInicio} alt="linguagem-python"
             />
           </div>
         </div>
@@ -210,6 +237,8 @@ function Principal() {
         <VideoJSPlayerComponent
           video={video_variaveis}
           cor_background={"#FFF8F4"}
+          alt="video-variavel-e-tipo-dados"
+          title="Vídeo sobre variáveis e tipos de dados"
         />
 
         <div>
@@ -303,6 +332,7 @@ function Principal() {
               <VideoJSPlayerComponent
                 video={video_operadores_logicos}
                 cor_background={"#FFF"}
+                alt="video-operador-logico"
               />
             </AccordionTab>
             <AccordionTab header="Operadores Relacionais">
@@ -404,7 +434,7 @@ function Principal() {
               titulo="Scratch"
               texto="No Scratch podemos criar um bloco que tenha a finalidade de uma função. O exemplo a seguir mostrar que sempre que iniciamos a 
                     execução do código, ele pede que o usuário insira dois números e retorna a soma deles."
-              img={funcaoS}
+              img={funcaoS} alt="funcao-scratch"
             />
 
             <SubConteudo
@@ -420,16 +450,24 @@ function Principal() {
                   parâmetro e a soma será feita.
                 </span>
               }
-              img={funcaoP}
+              img={funcaoP} alt="funcao-python"
             />
           </div>
         </div>
 
+        {showScrollButton && (
+          <div className={styles.scrollButton} onClick={scrollToTop}>
+            <span>&uarr;</span>
+          </div>
+        )}
+
       <section id="section-curiosidade">
         <div className={styles.divCuriosidades}>
           <Curiosidade />
+          <Footer />
         </div>
       </section>
+     
     </div>
   );
 }

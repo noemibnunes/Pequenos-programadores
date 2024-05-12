@@ -1,0 +1,12 @@
+.MenuButton {
+    border: 1px solid #017683;
+    border-radius: 6px;
+    background: transparent;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.MenuButton:hover {
+    background-color: #017683;
+    color: white;
+}
