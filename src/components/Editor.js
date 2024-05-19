@@ -1,16 +1,15 @@
 import React, { useRef, useState } from 'react';
-import { Box, Button, HStack, Menu, MenuButton, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Menu, MenuButton } from "@chakra-ui/react";
 import { Editor } from '@monaco-editor/react'; 
 import OutputEditor from './OutputEditor';
-import styles from './editor.module.css';
+import styles from './estilosComponents/editor.module.css';
 
-const CodeEditor = () => {
+export default function CodeEditor () {
   const editorRef = useRef()
   const [value, setValue] = useState('');
 
   const onMount= (editor) => {
     editorRef.current = editor;
-    editor.focus()
   }
 
   return (
@@ -36,5 +35,3 @@ const CodeEditor = () => {
     </Box>
   );
 };
-
-export default CodeEditor;

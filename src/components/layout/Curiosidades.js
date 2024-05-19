@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "primereact/button";
 import { Carousel } from "primereact/carousel";
+
+// Imagens
 import menino_programador from "../../img/menino_programador.png";
 import programacao_dia_dia from "../../img/programacao_diadia.svg";
 import aprender_programacao from "../../img/aprender_programacao.jpg";
 import pensamento_computacional from "../../img/pensamento_computacional.jpg";
 
-import styles from "./curiosidade.module.css";
+import styles from "./estilos/curiosidade.module.css";
 
 export default function Curiosidade() {
   const [curiosidades, setCuriosidades] = useState([]);

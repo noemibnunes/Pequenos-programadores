@@ -1,0 +1,58 @@
+.stepper {
+    flex-basis: 50rem;
+    font-family: "Azo Sans";
+    padding: 40px 0;
+
+    ul {
+        padding: 0;
+    }
+
+    [class~="p-stepper-action"] {
+        background-color: transparent !important;
+    }
+
+    [class~='p-stepper-number'] {
+        color: #000;
+    }
+    
+    [class~="p-stepper-panels"] {
+        background: transparent;
+        border: 3px solid #e5e7eb;
+        border-radius: 16px;
+
+        button {
+            background: #ff9408 !important;
+            border: solid #ff9408;
+            border-radius: 16px;            
+        }
+    }
+
+    [class~='p-button-label'] {
+        color: #000;
+    }
+
+    [class~='p-button-icon'] {
+        color: #000;
+    }    
+}
+
+.btnRight, .btnBetween {
+    display: flex;
+}
+
+.btnRight {
+    justify-content: end;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.btnBetween {
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+@media (max-width: 690px) {
+    [class~='p-button-label'] {
+        display: none !important;
+    }
+}

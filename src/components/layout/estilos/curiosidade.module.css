@@ -1,6 +1,6 @@
 [class~='p-carousel-content'] {
     /* background: #1D1534; */
-    background-image: url("../../img/carousel1.svg");
+    background-image: url("../../../img/carousel.svg");
     padding: 0 140px;
     display: flex;
     justify-items: center;

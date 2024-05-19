@@ -1,4 +1,4 @@
-import styles from './conteudo.module.css';
+import styles from './estilos/conteudo.module.css';
 
 export default function Conteudo(props) {
     return (

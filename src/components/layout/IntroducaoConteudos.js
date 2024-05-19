@@ -1,4 +1,4 @@
-import styles from './introducaoConteudo.module.css';
+import styles from './estilos/introducaoConteudo.module.css';
 
 export default function IntroducaoConteudo(props) {
     return (

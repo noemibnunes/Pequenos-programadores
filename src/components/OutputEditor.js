@@ -1,9 +1,9 @@
 import { Box, Button, Text, useToast } from '@chakra-ui/react';
 import { executeCode } from '../api';
 import { useState } from 'react';
-import styles from './editor.module.css';
+import styles from './estilosComponents/editor.module.css';
 
-const OutputEditor = ({editorRef, language}) => {
+export default function OutputEditor ({editorRef, language}) {
     const toast = useToast();
     const [output, setOutput] = useState(null)
     const [isLoading, setIsLoading] = useState(false)
@@ -54,5 +54,3 @@ const OutputEditor = ({editorRef, language}) => {
         </Box>
     );   
 };
-
-export default OutputEditor;

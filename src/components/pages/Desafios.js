@@ -1,13 +1,16 @@
 import { Box } from "@chakra-ui/react";
 import { useEffect } from "react";
 import CodeEditor from "../Editor";
-import styles from "./desafios.module.css";
+import { Link } from "react-router-dom";
+import styles from "./estilosPage/desafios.module.css";
+
+// Imagens
 import bodyDesafio from "../../img/detalhe-body-desafio.svg";
 import logoBranca from "../../img/Pequenos-Programadores-branco.svg";
 import logoPython from "../../img/python-logo.svg";
 import logoScratch from "../../img/scratch-logo.svg";
-
-import { Link } from "react-router-dom";
+import programacao from "../../img/programacao.jpg";
+import Footer from "../layout/Footer";
 
 export default function Desafios() {
   useEffect(() => {
@@ -34,6 +37,40 @@ export default function Desafios() {
         <h1 className={styles.tituloDesafios}>Desafios</h1>
       </div>
 
+      <p className={styles.explicacao}>
+        <span>
+          Nesta página, você encontrará desafios relacionados aos conceitos básicos
+          da programação como também desafios para desenvolver habilidades nas liguagens <strong>Python</strong> e 
+          <strong> Scratch</strong>. Pratique seus conhecimentos e desenvolva suas
+          habilidades!
+        </span>
+      </p>
+
+      <div className={styles.programacaoSquare}>
+        <div className={styles.divTitulo}>
+          <h1 className={styles.tituloLinguagem}>
+            Hora de praticar seus conhecimentos nos conceitos básicos da
+            programação
+          </h1>
+          <img
+            className={styles.logoScratch}
+            src={programacao}
+            alt="Imagem programacao"
+          ></img>
+        </div>
+        <div className={styles.questaoScratch}>
+          <iframe
+            src="https://scratch.mit.edu/projects/1022511806/embed"
+            allowtransparency="true"
+            width="485"
+            height="402"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+            title="Jogo educativo: Jornada do programador"
+          ></iframe>
+        </div>
+      </div>
       <div className={styles.pythonSquare}>
         <div className={styles.divTitulo}>
           <h1 className={styles.tituloLinguagem}>
@@ -123,6 +160,9 @@ export default function Desafios() {
             </td>
           </tr>
         </table>
+      </div>
+      <div className={styles.divCuriosidades}>
+        <Footer />
       </div>
     </div>
   );

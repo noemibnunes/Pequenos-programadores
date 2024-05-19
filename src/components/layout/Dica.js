@@ -1,4 +1,4 @@
-import styles from './dica.module.css';
+import styles from './estilos/dica.module.css';
 
 export default function Dica (props) {
     return (

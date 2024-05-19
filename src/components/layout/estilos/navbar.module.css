@@ -80,7 +80,7 @@
 
 @media (max-width: 980px) {
     .nav {
-        background-image: url("../../img/navbar-min.svg");
+        background-image: url("../../../img/navbar-min.svg");
 
         .logoColorida {
             display: none;

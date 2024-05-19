@@ -1,6 +1,8 @@
-import styles from './footer.module.css';
-import logoBranca from "../../img/Pequenos-Programadores-branco.svg";
 import { FaInstagram, FaEnvelope, FaYoutube } from 'react-icons/fa';
+import styles from './estilos/footer.module.css';
+
+// Imagens
+import logoBranca from "../../img/Pequenos-Programadores-branco.svg";
 
 export default function Footer() {
   return (
@@ -17,13 +19,13 @@ export default function Footer() {
           <h4 className={styles.texto}>©2024 </h4>
         </div>
         <div className={styles.right}>
-          <a href="#" target="_blank" rel="noopener noreferrer" alt="instagram">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" alt="instagram">
             <FaInstagram className={styles.icon} />
           </a>
-          <a href="#" alt="email">
+          <a href="mailto:seuemail@example.com" alt="email">
             <FaEnvelope className={styles.icon} />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" alt="youtube">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" alt="youtube">
             <FaYoutube className={styles.icon} />
           </a>
         </div>
