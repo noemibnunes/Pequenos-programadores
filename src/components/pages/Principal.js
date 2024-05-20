@@ -168,6 +168,8 @@ export default function Principal() {
           frameborder="0"
           scrolling="no"
           allowfullscreen
+          className={styles.iframes}
+          title="Vídeo: Explicando sobre variáveis e tipos de dados"
         ></iframe>
 
         <div>
@@ -204,6 +206,7 @@ export default function Principal() {
             scrolling="no"
             allowfullscreen
             title="Projeto Scratch: Exemplo de Estrutura Condicional"
+            className={styles.iframes}
           ></iframe>
         </div>
 
@@ -228,6 +231,7 @@ export default function Principal() {
             scrolling="no"
             allowfullscreen
             title="Projeto Scratch: Exemplo de Estrutura de Repetição"
+            className={styles.iframes}
           ></iframe>
         </div>
 
