@@ -126,9 +126,8 @@ export default function Principal() {
                   comunidade online onde se podem criar e partilhar histórias,
                   jogos e animações interativas. Nessa linguagem, utilizando
                   blocos para construir códigos, podemos assimilar a quando
-                  usamos peças de lego para construir algo. O bloco{" "}
-                  <strong>diga </strong> é usado para que o ator escolhido fale
-                  algo."
+                  usamos peças de lego para construir algo. O bloco <strong>diga </strong> é usado
+                  para que o ator escolhido fale algo."
                 </span>
               }
               img={scratchInicio}
@@ -161,15 +160,12 @@ export default function Principal() {
           />
         </div>
 
-        <iframe
-          src="https://scratch.mit.edu/projects/1010781687/embed"
-          allowtransparency="true"
-          width="485"
-          height="402"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen
-        ></iframe>
+        <VideoJSPlayerComponent
+          video={video_variaveis}
+          cor_background={"#FFF8F4"}
+          alt="video-variavel-e-tipo-dados"
+          title="Vídeo sobre variáveis e tipos de dados"
+        />
 
         <div>
           <Conteudo
