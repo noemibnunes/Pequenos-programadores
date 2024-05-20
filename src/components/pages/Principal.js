@@ -160,12 +160,15 @@ export default function Principal() {
           />
         </div>
 
-        <VideoJSPlayerComponent
-          video={video_variaveis}
-          cor_background={"#FFF8F4"}
-          alt="video-variavel-e-tipo-dados"
-          title="Vídeo sobre variáveis e tipos de dados"
-        />
+        <iframe
+          src="https://scratch.mit.edu/projects/1010781687/embed"
+          allowtransparency="true"
+          width="485"
+          height="402"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+        ></iframe>
 
         <div>
           <Conteudo
