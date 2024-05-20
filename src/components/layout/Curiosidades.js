@@ -36,7 +36,7 @@ export default function Curiosidade() {
         id: 3,
         titulo: "O que é pensamento computacional?",
         conteudo: <span>"Imagina que você está fazendo um exercício de matemática, que envolve um problema do tipo: &quot;João tinha 5 maçãs, Maria pediu 2 maçãs a João. Quantas maçãs restaram ao João?&quot;</span>,
-        subConteudo:  <span>Para resolver esse problema, você precisa entender o que está acontecendo. Então você separa as etapas: <strong>João tinha 5 maçãs. Maria pediu 2 maçãs</strong>.	Agora você entendeu o cenário, e percebe que terá que fazer uma subtração (5 - 2), ao fazer descobre que <strong>3 maçãs restaram ao João</strong>. </span>,
+        subConteudo:  <span>Para resolver esse problema, você precisa entender o que está acontecendo. Então você separa as etapas: <strong className={styles.strongBranco}>João tinha 5 maçãs. Maria pediu 2 maçãs</strong>.	Agora você entendeu o cenário, e percebe que terá que fazer uma subtração (5 - 2), ao fazer descobre que <strong className={styles.strongBranco}>3 maçãs restaram ao João</strong>. </span>,
         subConteudo2: "O Pensamento Computacional é isso, separar em partes menores um problema complexo e depois juntar essas partes para encontrar uma solução. Com o pensamento computacional, podemos resolver problemas de forma eficaz e criativa.",
         imagem: pensamento_computacional, alt_imagem:"pensamento-computacional"
       },

@@ -37,14 +37,14 @@
 @media (min-width: 1780px) {
   .subConteudo {
     .titulo {
-      font-size: 60px;
+      font-size: 50px;
     }
     p {
-      font-size: 25px;
+      font-size: 22px;
     }
 
     img {
-      width: 800px;
+      width: 400px;
     }
   }
 }
