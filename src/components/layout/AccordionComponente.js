@@ -18,7 +18,7 @@ export default function AccordionComponente() {
   return (
     <div>
       <div className="card">
-        <Accordion>
+        <Accordion activeIndex={0}>
           <AccordionTab header="Operadores Aritméticos">
             <h5>
               Operadores Aritméticos executam operações matemáticas como adição,
