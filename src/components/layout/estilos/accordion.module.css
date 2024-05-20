@@ -60,3 +60,17 @@
         }
     }
 }
+
+@media (max-width: 580px) {
+    .imgScratch, .imgVariavel,.scratch, .resultadoVariavelScratch, .imgPython, .exibirImg {
+        display: none;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}

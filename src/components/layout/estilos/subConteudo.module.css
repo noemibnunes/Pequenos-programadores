@@ -51,12 +51,26 @@
 
 @media (max-width: 1280px) {
   .subConteudo {
+    min-width: 300px;
+
     p {
       font-size: 14px;
     }
 
     img {
       width: 250px;
+    }
+
+    .scratchImg {
+      width: 300px; 
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .subConteudo {
+    .scratchImg {
+      width: 250px; 
     }
   }
 }

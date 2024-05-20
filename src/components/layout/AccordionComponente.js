@@ -24,7 +24,7 @@ export default function AccordionComponente() {
               Operadores Aritméticos executam operações matemáticas como adição,
               subtração, divisão, entre outras.
             </h5>
-            <p>
+            <p className={styles.exibirImg}>
               A imagem a seguir, mostra os blocos de operadores aritméticos no
               Scratch e como podemos utilizá-los:
             </p>
@@ -34,11 +34,11 @@ export default function AccordionComponente() {
               alt="operadores-scratch"
             ></img>
 
-            <p>
+            <p className={styles.exibirImg}>
               A imagem a seguir, mostra como podemos utilizar os operadores
               aritméticos no Python:
             </p>
-            <img src={operadoresPython} alt="operadores-python"></img>
+            <img className={styles.imgPython} src={operadoresPython} alt="operadores-python"></img>
           </AccordionTab>
           <AccordionTab header="Operadores de Designação">
             <h5>
@@ -69,11 +69,11 @@ export default function AccordionComponente() {
                 alt="resultado-variavel-scratch"
               ></img>
             </div>
-            <p>
+            <p className={styles.exibirImg}>
               A imagem a seguir, mostra como é criado uma variável e atribuido
               um valor a essa variável no Python:
             </p>
-            <img src={variavelPython} alt="variavel-python"></img>
+            <img className={styles.imgPython} src={variavelPython} alt="variavel-python"></img>
           </AccordionTab>
           <AccordionTab header="Operadores Lógicos">
             <h5>
@@ -110,7 +110,7 @@ export default function AccordionComponente() {
               &gt;= (maior ou igual que). O que vai mudar na forma de
               representar são os operadores de == (Igual a) e != (diferente de).
             </p>
-            <p style={{ padding: "20px" }}>
+            <p className={styles.exibirImg} style={{ padding: "20px" }}>
               A imagem a seguir, mostra como utilizamos os operadores
               relacionais no Scratch. Para que você não fique com dúvidas o (
               <strong>FALSE</strong>) significa falso e (<strong>TRUE</strong>)
@@ -121,11 +121,12 @@ export default function AccordionComponente() {
               src={operadorRelacionalS}
               alt="operador-relacional-scratch"
             ></img>
-            <p>
+            <p className={styles.exibirImg}>
               A imagem a seguir, mostra como utilizamos os operadores
               relacionais no Python:
             </p>
             <img
+              className={styles.imgPython}
               src={operadorRelacionalP}
               alt="operador-relacional-python"
             ></img>
