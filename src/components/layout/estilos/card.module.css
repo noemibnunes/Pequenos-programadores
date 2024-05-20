@@ -4,17 +4,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-    p {
-        text-align: center;
-        padding: 0 20px;
-    }
+.card h2 {
+    margin: 0 0 10px;
+    color: var(--cor-titulo);
+    text-align: center;
+}
 
-    h2 {
-        padding: 20px 0;
-        color: var(--cor-titulo);
-    }
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card p {
+    text-align: center;
+    padding: 0 20px;
+    margin: 20px 0 0;
 }
 
 @media (max-width: 980px) {
