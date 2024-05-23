@@ -68,6 +68,7 @@ export default function Desafios() {
             scrolling="no"
             allowfullscreen
             title="Jogo educativo: Jornada do programador"
+            className={styles.iframes}
           ></iframe>
         </div>
       </div>
